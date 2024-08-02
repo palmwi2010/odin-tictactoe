@@ -92,6 +92,7 @@
 
 .unset:hover {
     cursor: pointer;
+    background-color: #d1d5db;
 }
 
 .set:hover {
