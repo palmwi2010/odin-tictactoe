@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'Nordic';
+    src: url('/NorseBold-2Kge.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.title {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px black;
+}
+
+.banner {
+    padding: 30px 0;
+    background-image: linear-gradient(90deg, #facc15 ,#b45309);
+    color: white;
+    box-shadow: 0 5px 10px 0 #fef08a;
+    text-align: center;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px black;
+
+}
+
+.announcer {
+    margin-top: 50px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Game board */
+.main {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.player-area {
+    width: 20%;
+    padding: 12px 24px;
+    border-radius: 10px;
+}
+
+#p1 {
+    background-color: #fbbf24;
+    border: 2px solid #78350f;
+    box-shadow: 6px 6px 10px 0 black;
+}
+
+#p2 {
+    background-color: #f87171;
+}
+
+#p2 h2 {
+    font-weight: 100;
+}
+
+.player-title {
+    font-size: 2rem;
+}
+
+.game-board {
+    width: clamp(200px, 50%, 600px);
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.game-square {
+    border: 2px solid black;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    display: grid;
+    align-items: center;
+    color: white;
+    -webkit-text-stroke: 5px black;
+}
+
+.unset:hover {
+    cursor: pointer;
+}
+
+.set:hover {
+    cursor: alias;
+}
+
+.player-symbol {
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 5rem;
+    padding: 24px;
+    text-shadow: 2px 2px black;
+}
+
+.reset-btn {
+    padding: 12px 24px;
+    border-radius: 10px;
+    background-color: #713f12;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin: 40px auto;
+    text-align: center;
+    display: flex;
+    transition-duration: 0.5s;
+}
+
+.triggered {
+    background-color: #eab308;
+    padding: 12px 48px;
+    transition-duration: 0.5s;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background-color: #eab308;
+    padding: 12px 48px;
+    transition-duration: 0.5s;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.player-area {
+    color: white;
+}
+
+.score-title {
+    font-size: 70px;
+    font-weight: 700;
+    text-shadow: 2px 2px black;
+
+}
+
+.score {
+    font-family: 'Nordic';
+    font-size: 100px;
+    text-shadow: 2px 2px black;
+    margin-top: 20px;
+
+}
